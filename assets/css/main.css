@@ -2605,6 +2605,7 @@ input, select, textarea {
 
 		ul.icons.major li {
 			padding: 0 2.5em 0 0;
+			margin-top: 2em;
 		}
 
 			ul.icons.major li .icon:before {
@@ -2725,6 +2726,33 @@ input, select, textarea {
 			display: block;
 			width: 4em;
 			margin: 2em auto 0 auto;
+		}
+		.flip-inner {
+			position: relative;
+			 width: 100%;
+			  height: 100%;
+			  text-align: center;
+			  transition: transform 0.8s;
+			  transform-style: preserve-3d;
+		}
+		
+		header.major:hover .flip-inner {
+			transform: rotateY(180deg);
+			cursor: pointer;
+		}
+	
+		.flip-front, .flip-back {
+			position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  -webkit-backface-visibility: hidden; /* Safari */
+			  backface-visibility: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.flip-back {
+			transform: rotateY(180deg);
 		}
 
 		@media screen and (max-width: 736px) {
