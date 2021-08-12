@@ -2722,7 +2722,7 @@ input, select, textarea {
 
 		header.major:after {
 			content: '';
-			border-bottom: solid 2px #e6e6e6;
+			/* border-bottom: solid 2px #e6e6e6; */
 			display: block;
 			width: 4em;
 			margin: 2em auto 0 auto;
@@ -2755,6 +2755,9 @@ input, select, textarea {
 			transform: rotateY(180deg);
 		}
 
+		.skills-list {
+			font-size: 1.4em;
+		}
 		@media screen and (max-width: 736px) {
 
 			header.major {
@@ -2783,14 +2786,14 @@ input, select, textarea {
 
 		.spotlight .image {
 			width: 30%;
-			border-radius: 100%;
+			border-radius: 5%;
 			margin: 0 3em 0 0;
 			display: block;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
+				border-radius: 5%;
 				width: 100%;
 			}
 
