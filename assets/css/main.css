@@ -2811,6 +2811,7 @@ input, select, textarea {
 			margin: 0 3em 0 0;
 			display: block;
 			z-index: 5;
+			transition: width 5s, height 5s;
 		}
 
 			.spotlight .image img {
@@ -2820,13 +2821,19 @@ input, select, textarea {
 			}
 
 			.spotlight .image:hover {
-				transform: scale(2.75);
-				/* height: 200px; */
-				right: 20%;
+				transform: scale(2.25);
+				max-height: 250px !important;
+				transition: width 5s, height 5s;
+				right: 36%;
 				/* transform: translate(-50%, -50%); */
 				position: absolute;
 				cursor: pointer;
 			}
+
+			.spotlight .image:hover ~ .content > * {
+				color: white;
+			}
+
 
 		.spotlight .content {
 			width: 70%;
