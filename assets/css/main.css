@@ -2818,13 +2818,13 @@ input, select, textarea {
 				display: block;
 				border-radius: 5%;
 				width: 100%;
+				object-fit: contain;
 			}
 
 			.spotlight .image:hover {
 				transform: scale(2.25);
 				max-height: 250px !important;
 				right: 36%;
-				/* transform: translate(-50%, -50%); */
 				position: absolute;
 				cursor: pointer;
 			}
