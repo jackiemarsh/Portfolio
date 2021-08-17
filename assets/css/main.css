@@ -2813,7 +2813,10 @@ input, select, textarea {
 			z-index: 5;
 			transition: all .5s ease-in-out;
 		}
+		/* .content .actions > li > a {
+			transition: all 2s ease-in-out;
 
+		} */
 			.spotlight .image img {
 				display: block;
 				border-radius: 5%;
@@ -2822,15 +2825,28 @@ input, select, textarea {
 			}
 
 			.spotlight .image:hover {
-				transform: scale(2.25);
+				transform: scale(1.75) translateX(25%) translateY(-10%);
 				max-height: 250px !important;
-				right: 36%;
+				/* left: 25%; */
+				position: absolute;
+				cursor: pointer;
+			}
+			.spotlight .image.right:hover {
+				transform: scale(1.75) ;
+				max-height: 250px !important;
+				/* left: 25%; */
 				position: absolute;
 				cursor: pointer;
 			}
 
 			.spotlight .image:hover ~ .content > * {
 				color: white;
+				
+			}
+
+			.spotlight .image:hover ~ .content ul > li > a {
+				box-shadow: none;
+				color: white !important;
 			}
 
 
@@ -2842,20 +2858,20 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
-		.spotlight:nth-child(2n) {
+		/* .spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
-		}
+		} */
 
-			.spotlight:nth-child(2n) .image {
+			/* .spotlight:nth-child(2n) .image {
 				margin: 0 0 0 3em;
 			}
 
 			.spotlight:nth-child(2n) .content {
 				text-align: right;
-			}
+			} */
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
