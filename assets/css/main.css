@@ -2717,7 +2717,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 2.5em 0;
+		margin: 0 0 3.5em 0;
 		text-align: center;
 	}
 
@@ -2751,6 +2751,7 @@ input, select, textarea {
 			  text-align: center;
 			  transition: transform 0.8s;
 			  transform-style: preserve-3d;
+			 
 		}
 		
 		header.major:hover .flip-inner {
@@ -2770,6 +2771,14 @@ input, select, textarea {
 		}
 		.flip-back {
 			transform: rotateY(180deg);
+
+		}
+		.flip-back p {
+			background-color: #4696e5cb;
+			border: solid 1px whitesmoke;
+			border-radius: 5px;
+			color: white;
+			padding: 16px;
 		}
 
 		.skills-list {
@@ -2789,6 +2798,7 @@ input, select, textarea {
 
 		.contact {
 			box-shadow: none !important;
+			cursor: default !important;
 		}
 /* Spotlight */
 
