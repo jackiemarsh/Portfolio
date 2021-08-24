@@ -2735,6 +2735,7 @@ input, select, textarea {
     	text-decoration: none;
     	white-space: nowrap;
 		font-size: 1.5em;
+		background-color: #4696e53b;
 	}
 
 		header.major:after {
@@ -2800,6 +2801,7 @@ input, select, textarea {
 		.contact {
 			box-shadow: none !important;
 			cursor: default !important;
+			background-color: transparent !important;
 		}
 /* Spotlight */
 
